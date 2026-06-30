@@ -1,0 +1,35 @@
+/* src/styles/login.css */
+
+.login-page {
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.login-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-lg);
+}
+
+.login-role-hint {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: var(--space-sm);
+}
+
+.login-footer {
+    margin-top: var(--space-lg);
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+}
