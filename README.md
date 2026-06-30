@@ -1,9 +1,9 @@
 <img width="51" height="54" alt="image" src="https://github.com/user-attachments/assets/bf5512c8-6b6e-4bcf-86bf-1244d44d16b5" />
 **Informe del Proyecto: BugLog**
-PARCIAL 2 - Diseño de Sistemas.
+PARCIAL 2 - Administración de Proyectos.
 
 **Repositorio:**
-https://github.com/AnthonyNadsat/parcial2-dds-acn5bv-galarza-salazar-williams
+https://github.com/MarWG/parcial-2-ap-acn5bv-galarza-salazar-williams
 
 **Equipo:**
 - Galarza Lukas
@@ -11,7 +11,7 @@ https://github.com/AnthonyNadsat/parcial2-dds-acn5bv-galarza-salazar-williams
 - Williams Mariano
 
 **Descripción:** 
-- Entrega Parcial 2 - Diseño de Sistemas (_cuatrimestre 1 - 2026_)
+- Entrega Parcial 2 - Administración de Proyectos (_cuatrimestre 1 - 2026_)
 
 ---
 
@@ -102,8 +102,8 @@ A diferencia del segundo parcial, esta versión **final** incorpora:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/AnthonyNadsat/parcial-2-pd-acn4bv-galarza-salazar.git
-cd parcial-2-pd-acn4bv-galarza-salazar
+git https://github.com/MarWG/parcial-2-ap-acn5bv-galarza-salazar-williams
+cd parcial-2-ap-acn5bv-galarza-salazar-williams
 ```
 
 ### 2. Instalar dependencias del backend
