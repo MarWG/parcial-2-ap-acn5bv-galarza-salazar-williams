@@ -74,3 +74,39 @@ Para el seguimiento del proyecto se definieron las siguientes ceremonias adaptad
 | Sprint 3 | Panel de Administración | CRUD de usuarios exclusivo para admin |
 | Sprint 4 | Documentación y Cierre | OKR, stakeholders, metodología, etc. |
 
+# 
+
+# **Análisis de Requerimientos — Historias de Usuario**
+
+Los requerimientos de BugLog fueron relevados a partir del análisis del flujo de trabajo de un equipo de QA en la industria del videojuego. Se identificaron las necesidades de dos perfiles de usuario diferenciados — el Tester y el Administrador — y a partir de ellas se formularon las historias de usuario que guiaron el desarrollo del sistema.
+
+Para documentar los requerimientos se utilizó el formato de Historia de Usuario, siguiendo la estructura: *Como \[rol\], quiero \[acción\] para \[beneficio\]*. Cada historia fue asignada a un integrante del equipo y vinculada a su épica correspondiente en Jira.
+
+**Sprint 1**
+
+| ID Jira | Historia de Usuario | Criterio de Aceptación |
+| :---- | :---- | :---- |
+| SCRUM-5 | Como tester, quiero iniciar sesión con usuario y contraseña para acceder al sistema. | JWT generado, token en localStorage, redirección a Home tras login exitoso. |
+|  SCRUM-6 | Como admin, quiero que mi rol sea verificado en cada request para restringir accesos no autorizados. | verifyTokenAndAdmin rechaza con 403 si el rol no es admin. |
+| SCRUM-7 | Como sistema, quiero almacenar contraseñas encriptadas para proteger los datos de los usuarios. | Bcrypt aplicado al crear y actualizar usuarios. La contraseña nunca se devuelve en las respuestas. |
+| SCRUM-8 | Como tester, quiero ser redirigido al login si no tengo sesión activa. | RequireAuth.jsx redirige a /login sin token válido. RequireAdmin.jsx redirige si el rol no es admin. |
+
+**Sprint 2**
+
+| ID Jira | Historia de Usuario | Criterio de Aceptación |
+| :---- | :---- | :---- |
+| SCRUM-9 | Como tester, quiero reportar un bug con nombre de juego, plataforma, tipo y gravedad. | POST /api/bugs crea el registro. BugForm.jsx valida los campos en tiempo real. Respuesta 201 con el bug creado. |
+|  SCRUM-10 | Como tester, quiero ver el historial de todos los bugs reportados. | GET /api/bugs con JOIN a tabla users. Reportes.jsx renderiza una BugCard por cada registro. |
+| SCRUM-11 | Como tester, quiero editar mis propios reportes para corregir información incorrecta. | PUT /api/bugs/:id verifica que userId coincida. EditModal.jsx carga los datos previos del reporte. |
+| SCRUM-12 | Como admin, quiero editar y eliminar cualquier bug sin restricción de propietario. | El middleware verifica req.user.role \=== 'admin' para omitir la verificación de userId. |
+| SCRUM-17 | Como tester, quiero agregar la portada del juego mediante una URL al reportar un bug. | Campo imageUrl disponible en el formulario. BugCard.jsx muestra la imagen si el campo tiene valor. |
+
+**Sprint 3**
+
+| ID Jira | Historia de Usuario | Criterio de Aceptación |
+| :---- | :---- | :---- |
+| SCRUM-13 | Como admin, quiero ver una tabla de todos los usuarios registrados del sistema. | GET /api/users disponible solo para admin. AdminUsers.jsx lista id, username, email, rol y fecha de creación. |
+|  SCRUM-14 | Como admin, quiero crear nuevos usuarios con username, email, contraseña y rol. | POST /api/users con User.create(). Bcrypt aplicado. Validaciones de unicidad de username y email. |
+| SCRUM-15 | Como admin, quiero modificar datos de cualquier usuario, incluyendo su rol y contraseña. | PUT /api/users/:id con User.update(). Si se provee nueva contraseña, es hasheada antes de guardarse. |
+| SCRUM-16 | Como admin, quiero eliminar usuarios sin poder eliminar mi propia cuenta. | DELETE /api/users/:id con verificación server-side: req.user.id \!== id. Confirmación visual en el frontend. |
+
