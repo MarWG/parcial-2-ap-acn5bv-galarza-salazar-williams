@@ -20,3 +20,32 @@ Lo que se quiere alcanzar con BugLog es que cualquier equipo de QA, sin importar
 | KR4 | Asegurar persistencia de datos con base de datos relacional | SQLite con FOREIGN KEY, UNIQUE constraints, CHECK de roles e índices optimizados |
 | KR5 | Diseño responsive funcional para desktop, tablet y móvil | CSS modular por componente, grid de 3 columnas responsive, tema oscuro inspirado en Steam |
 
+# **Análisis de interesados — Stakeholders**
+
+En el caso de BugLog, los interesados fueron identificados a partir del análisis del contexto de uso de la herramienta: equipos de QA dentro de estudios de videojuegos, de distinto tamaño y estructura organizacional.
+
+Para este proyecto se identificaron los siguientes interesados principales junto a su influencia e impacto:
+
+### **Estudio de Videojuegos** Empresa o estudio presumiblemente independiente que desarrolla videojuegos y requiere una herramienta centralizada para que su equipo de QA reporte y gestione los errores detectados durante las fases de testing.  **Influencia:** Alta. Define los requerimientos funcionales del sistema y es el principal financiador del proyecto. **Impacto:** Determina qué funcionalidades son prioritarias y con qué criterios se evalúa el éxito del producto. Si el sistema no cubre sus necesidades operativas, optará por herramientas alternativas.
+
+### **Tester de QA** Profesional de QA que prueba videojuegos en distintas plataformas y necesita una herramienta ágil para registrar bugs durante sus sesiones de testing. Es el usuario más activo del sistema y su experiencia de uso determina directamente la adopción de la herramienta.
+
+### **Influencia:** Media. Su experiencia de uso cotidiano define si la herramienta es adoptada o abandonada. **Impacto:** Permite validar la usabilidad del sistema y la efectividad del flujo de reporte de bugs. Un sistema con fricción genera rechazo y retorno a métodos informales.
+
+### **Líder Técnico / Project Manager del estudio** Responsable técnico que supervisa el proceso de QA, gestiona al equipo de testers y necesita visibilidad sobre el estado general de los bugs para tomar decisiones sobre el lanzamiento de cada título.
+
+### **Influencia:** Alta. Tiene poder de decisión sobre si el sistema reemplaza las herramientas actuales del estudio. **Impacto:** Define las reglas de acceso, supervisa la integridad de los datos y valida que el sistema se adapta a la operatoria del equipo.
+
+### **Jugadores** Personas que adquieren y juegan los videojuegos producidos por el estudio. No interactúan con BugLog directamente, pero son los afectados por la calidad del producto que el sistema contribuye a mejorar.
+
+### **Influencia:** Baja sobre BugLog directamente, pero alta sobre el negocio del estudio. **Impacto:** Si el proceso de QA falla y el juego se lanza con errores críticos, las reseñas negativas impactan directamente en las ventas y la reputación del estudio. BugLog contribuye a mitigar este riesgo.
+
+A partir de este análisis se determinó que el Estudio de Videojuegos y el Líder Técnico representan los stakeholders con mayor influencia sobre el proyecto, ya que participan en la definición y validación de los requerimientos funcionales.
+
+| Stakeholder | Nivel de Interés | Nivel de influencia |
+| :---- | :---- | :---- |
+| Estudio de videojuegos | Muy alto | Alto |
+|  Tester de QA  | Alto | Medio |
+| Líder Técnico / Project Manager | Alto | Alto |
+| Jugadores | Medio | Bajo |
+
