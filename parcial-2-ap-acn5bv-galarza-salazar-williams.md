@@ -49,3 +49,28 @@ A partir de este análisis se determinó que el Estudio de Videojuegos y el Líd
 | Líder Técnico / Project Manager | Alto | Alto |
 | Jugadores | Medio | Bajo |
 
+# 
+
+# **Metodología Ágil — Scrum**
+
+Para el desarrollo de BugLog se adoptó la metodología ágil **Scrum**, gestionada mediante Jira como herramienta de seguimiento. Esta metodología permite organizar el trabajo de manera iterativa e incremental, facilitando la adaptación a cambios en los requerimientos y promoviendo la entrega continua de valor a lo largo del proyecto.
+
+La elección de Scrum se fundamenta en la necesidad de estructurar el trabajo en sprints con objetivos claros y medibles, organizar el backlog mediante historias de usuario con estimaciones en story points y mantener visibilidad del avance del equipo en todo momento. Otros puntos para justificar su elección sería que al ser un equipo pequeño la metodología **Scrum** es adaptable a 3 personas sin necesidad de roles formales rígidos, manteniendo las entregas incrementales; cada sprint permite la evaluación progresiva del proyecto mediante **Jira**.
+
+Para el seguimiento del proyecto se definieron las siguientes ceremonias adaptadas al contexto del equipo:
+
+**Sprint Planning:** reunión destinada a planificar las historias de usuario a desarrollar en cada sprint, definiendo objetivos, estimaciones y asignaciones.
+
+**Daily Meeting:** encuentro breve para revisar avances e identificar impedimentos. Dada la naturaleza del proyecto y el tamaño del equipo, estas sincronizaciones se realizan de forma asincrónica mediante mensajes cuando la complejidad de las tareas lo requiere.
+
+**Sprint Review:** instancia de revisión de las funcionalidades desarrolladas y validación de los resultados respecto de los objetivos definidos para cada sprint.
+
+**Sprint Retrospective:** reunión orientada a identificar oportunidades de mejora en el proceso de trabajo y definir acciones correctivas para el siguiente sprint.
+
+| Sprint | Nombre | Objetivo |
+| :---- | :---- | :---- |
+| Sprint 1 | Autenticación y Base | Login JWT, roles, rutas protegidas, bcrypt |
+|  Sprint 2 | CRUD de Bugs | Reporte, historial, edición, permisos por rol, portadas |
+| Sprint 3 | Panel de Administración | CRUD de usuarios exclusivo para admin |
+| Sprint 4 | Documentación y Cierre | OKR, stakeholders, metodología, etc. |
+
