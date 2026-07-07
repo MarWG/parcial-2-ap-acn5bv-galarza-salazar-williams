@@ -110,3 +110,43 @@ Para documentar los requerimientos se utilizó el formato de Historia de Usuario
 | SCRUM-15 | Como admin, quiero modificar datos de cualquier usuario, incluyendo su rol y contraseña. | PUT /api/users/:id con User.update(). Si se provee nueva contraseña, es hasheada antes de guardarse. |
 | SCRUM-16 | Como admin, quiero eliminar usuarios sin poder eliminar mi propia cuenta. | DELETE /api/users/:id con verificación server-side: req.user.id \!== id. Confirmación visual en el frontend. |
 
+
+# 
+
+# **Tablero de Seguimiento — Jira**
+
+Para el seguimiento del proyecto se configuró un tablero Scrum en Jira, organizado en cuatro columnas que representan el flujo de trabajo del equipo a lo largo de los sprints.
+
+**Configuración del Tablero**
+
+| Columna | Descripción |
+| :---- | :---- |
+| Backlog | Historias de usuario creadas y pendientes de ser incorporadas al sprint activo. |
+|  En Progreso | Ítems activamente en desarrollo durante el sprint en curso. |
+| Listo | Ítems cerrados con funcionalidad verificada y mergeada en la rama principal. |
+| **Link al Jira** | **https://buglog.atlassian.net/jira/software/projects/SCRUM/summary?atlOrigin=eyJpIjoiYjFkZDc5NTdlODkzNGJhNTkyYjljNzQ2ZmZkOTNhMDMiLCJwIjoiaiJ9\#/rule-list?systemLabelId=project\&page=1\&pageSize=20\&sortKey=name\&sortOrder=ASC** |
+
+**Épicas**
+
+| Épica | Descripción |
+| :---- | :---- |
+| **EP-01 GESTIÓN DEL PROYECTO** | Agrupa todas las tareas de documentación: objetivo, stakeholders, metodología, historias de usuario, tablero, milestones y ajuste metodológico. |
+| **EP-02 AUTENTICACIÓN** | Agrupa las historias y tareas relacionadas con login JWT, verificación de roles, encriptación de contraseñas y rutas protegidas. |
+| **EP-03 GESTIÓN DE BUGS** | Agrupa las historias y tareas del CRUD de bugs: formulario de reporte, historial con filtros, edición y permisos por rol. |
+| **EP-04 PANEL DE ADMINISTRACIÓN** | Agrupa las historias y tareas del panel de usuarios: tabla, creación, edición y eliminación de cuentas. |
+
+A continuación se adjuntan algunos ejemplos visuales del Jira, más detalles dentro del enlace compartido previamente:![][image1]
+
+
+**Control de Versiones — GitHub**
+
+El código fuente y la documentación del proyecto se gestionaron mediante **GitHub** como sistema de control de versiones, utilizando **Conventional Commits** como estándar para los mensajes del historial.
+
+El repositorio es público y contiene el código fuente completo de **BugLog**, el archivo [**‎parcial-2-ap-acn5bv-galarza-salazar-williams.md‎**](https://github.com/MarWG/parcial-2-ap-acn5bv-galarza-salazar-williams/commit/f92f3e6cca42fe507f9c68a32b1d4e00297c6e84#diff-11eccf867ebb7b5a433c5645a89e2cad506aad17cc1ecca9aede1caea8bf4094) con la documentación del proyecto versionada de forma incremental en el *branch* **docs**.
+
+| Link al Repositorio | [https://github.com/MarWG/parcial-2-ap-acn5bv-galarza-salazar-williams](https://github.com/MarWG/parcial-2-ap-acn5bv-galarza-salazar-williams) |
+| :---- | :---- |
+
+Cada sección del informe fue incorporada en un commit separado, permitiendo que el historial de GitHub refleje la evolución del documento de forma trazable. Los commits siguen el formato tipo: *descripción (versión)*
+
+El usuario **sergiomedinaio** fue agregado como colaborador externo del repositorio para permitir el acceso del profesor durante la evaluación.
