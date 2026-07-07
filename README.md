@@ -1,3 +1,7 @@
+<img width="1414" height="2000" alt="Documento_a4_reporte_financiero_profesional_moderno_negro" src="https://github.com/user-attachments/assets/89626263-1138-4323-83f4-0a1e5d621c79" />
+
+
+
 <img width="51" height="54" alt="image" src="https://github.com/user-attachments/assets/bf5512c8-6b6e-4bcf-86bf-1244d44d16b5" />
 **Informe del Proyecto: BugLog**
 PARCIAL 2 - Administración de Proyectos.
