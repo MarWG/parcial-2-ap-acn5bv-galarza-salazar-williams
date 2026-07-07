@@ -12,6 +12,10 @@ const dbPath = path.join(dataDir, "bugs.db");
 
 const db = new Database(dbPath);
 
+// v1.2.0 - esquema de base de datos estable con índices y foreign keys
+
+
+
 // Tabla de usuarios
 db.exec(`
     CREATE TABLE IF NOT EXISTS users (
